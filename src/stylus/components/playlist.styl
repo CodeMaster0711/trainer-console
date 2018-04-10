@@ -1,0 +1,32 @@
+@import '../base/variables'
+
+.playlist
+  color $text-color
+
+  .title
+    font-size 14px
+    font-weight 600
+
+  &__current
+    padding 0 0 15px
+    border-bottom 1px solid $gray
+
+    .info
+      lost-column 9/12 0 15px flex
+
+      .name-playlist
+        font-size 18px
+
+    .icon
+      lost-column 3/12 0 15px flex
+      background $gray
+      padding 15px
+
+  &__now-playing
+    padding 15px 0 0
+
+    .music-name
+      font-size 18px
+
+    .status
+      font-size 12px

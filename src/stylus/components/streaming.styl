@@ -1,0 +1,29 @@
+@import '../base/variables'
+
+.streaming
+
+  .title
+    color $text-color
+    font-size 14px
+    font-weight 600
+
+  &__status
+    text-align center
+
+    .status
+      width 8px
+      height 8px
+      border-radius 100%
+      background-color $gray
+      display inline-block
+
+      &--offline
+        background-color $danger
+
+      &--online
+        background-color $online
+
+    .text
+      display inline-block
+      color #333
+      font-size 12px

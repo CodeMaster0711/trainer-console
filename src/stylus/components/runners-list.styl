@@ -1,0 +1,65 @@
+@import '../base/variables'
+
+.runners-list
+  margin 0
+  padding 0
+
+  &__item
+    list-style none
+    padding 15px 0
+
+    &--empty
+      h1
+        text-align center
+        font-size 20px
+        color $text-color
+        padding 15px 0
+
+    &:first-child
+      padding 0 0 15px
+
+    &:last-child
+      padding 15px 0 0
+
+    &:not(:last-child)
+      border-bottom 1px solid $gray
+
+    .user-image
+      flex 1 0 auto
+      max-width 40px
+
+      img
+        max-width 100%
+        width 100%
+        border-radius 100%
+
+    .user-infos
+      padding 0 0 0 15px
+      flex 1 0 auto
+
+      .name
+        font-size 20px
+        color $text-color
+
+      span
+        font-size 14px
+        color $text-color
+
+        &.separation
+          width 5px
+          height 5px
+          border-radius 100%
+          margin 0 8px
+          background-color rgba($text-color, .5)
+
+    .position
+      flex 1 0 auto
+      max-width 30px
+      background-color $primary
+      color #fff
+      text-align center
+      width 30px
+      line-height 30px
+      border-radius 100%
+      font-family 'Avenir'
+      margin 0 0 0 15px

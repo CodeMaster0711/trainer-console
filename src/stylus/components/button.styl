@@ -1,0 +1,67 @@
+@import '../base/variables'
+
+.btn
+    outline none
+    border-radius 3px
+    padding 0 12px
+    height 34px
+    margin 0
+    font-size 14px
+    text-align center
+    cursor pointer
+    text-decoration none
+    font-family 'Avenir', Helvetica, Arial
+    letter-spacing 1.1px
+    display inline-block
+    line-height 34px
+
+    &:disabled
+        opacity 0.6
+
+    &--block
+        display block
+        width 100%
+
+    &--large
+      height 45px
+      font-size 18px
+
+    &--primary
+        background $primary
+        border 1px solid $primary
+        color #fff
+
+        &:hover, &:focus
+            background $primary - 10%
+            border 1px solid ($primary - 10%)
+            color #fff
+
+    &--gray
+        background $gray
+        border 1px solid $gray
+        color $text-color
+
+        &:hover, &:focus
+            background $gray - 10%
+            border 1px solid ($gray - 10%)
+            color $text-color
+
+    &--danger
+        background $danger
+        border 1px solid $danger
+        color #fff
+
+        &:hover, &:focus
+            background $danger - 10%
+            border 1px solid ($danger - 10%)
+            color #fff
+
+    &--warning
+        background $warning
+        border 1px solid $warning
+        color #fff
+
+        &:hover, &:focus
+            background $warning - 10%
+            border 1px solid ($warning - 10%)
+            color #fff

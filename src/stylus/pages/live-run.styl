@@ -1,0 +1,322 @@
+@import '../base/variables'
+
+.live-run
+  padding 15px 0 30px
+
+  header
+    lost-column 12/12 0 15px flex
+    padding 0 0 10px
+    margin 0 0 15px
+    border-bottom 1px solid $gray
+
+    &.simple
+      border-bottom 0
+      margin 0
+
+    .title
+      font-size 24px
+      font-family 'Avenir'
+      color $primary
+      text-transform uppercase
+
+      span
+        color $text-color
+        font-size 14px
+        line-height 24px
+
+    .description
+      .name
+        font-size 18px
+        font-family 'Avenir'
+        color $text-color
+
+  &__race-info
+    lost-column 12/12 0 15px flex
+    margin 0 0 15px
+    background-color #f5f5f5
+
+  .runners
+    lost-column 4.5/12 0 15px flex
+
+  .trainers-notes
+    lost-column 4.5/12 0 15px flex
+    
+    .box__content
+      height calc(100vh - 260px)
+
+      .form__group
+        height 100%
+
+        .form-control
+          height 100%
+
+  .infos
+    lost-column 3/12 0 15px flex
+    display none !important
+    
+    .remaining-time
+      margin 0 0 15px
+
+    .playlist
+      margin 0 0 15px
+
+
+.modal-mask
+    position fixed
+    z-index 9998
+    top 0
+    left 0
+    width 100%
+    height 100%
+    background-color rgba(0, 0, 0, .5)
+    display table
+    transition opacity .3s ease
+
+.modal-wrapper
+    display table-cell
+    vertical-align middle
+
+.modal-container
+    width 496px
+    height 223px
+    margin 0px auto
+    padding 20px 30px
+    background-color white
+    border-radius 24px
+    box-shadow 0 2px 8px rgba(0, 0, 0, .33)
+    transition all .3s ease
+    font-family Helvetica, Arial, sans-serif
+
+.active
+    background-color red
+
+.modal-container1
+    width 496px
+    margin 0px auto
+    padding 20px 30px
+    background-color white
+    box-shadow 0 2px 8px rgba(0, 0, 0, .33)
+    font-family Helvetica, Arial, sans-serif
+
+.label-remaning-Time
+    div
+        width 20px
+
+.modal-footer
+    text-align right
+
+.modal-footer1
+    text-align right
+    margin 114px
+    margin-top 21px
+
+textarea
+    width 1202px
+    height 38px
+
+.modal-header
+    h3
+        margin-top 0
+        color lightgray
+        text-align left
+        font-size 23px
+
+.modal-header1
+    h3
+        color red
+        text-align center
+        font-size 29px
+
+.modal-body
+    margin 20px 0
+    text-align center
+
+.modal-default-button
+    float center
+    color black
+    border 1px solid #423799
+    width 81px
+    height 33px
+    border-radius 77px
+
+.modal-default-button1
+    float center
+    color white
+    background-color #f36
+    width 81px
+    height 33px
+    font-size 22px
+
+.live-run
+    border-bottom 1px solid #ccc
+    height 95px
+    margin-bottom 20px
+
+#btn-delete
+    top 25px
+
+#date
+    color #8a8282
+
+#timerset
+    position relative
+    em
+        font-style normal
+        margin 0 0 0 20px
+
+#timerset2
+    position relative
+    color red
+
+#timerset1
+    position relative
+
+#Runner
+    color red
+
+.actions
+    width 70%
+    position relative
+
+.btn--primary
+    .header-button
+        width 15%
+
+.headertimers .remaining-time, .headertimers .remaining-time *
+    font-size 13px !important
+    background-color #fff
+    padding 0
+    text-align left
+    color #606060
+
+.headertimers
+    float left
+    width 30%
+    position relative
+    .remaining-time
+        .title
+            text-transform initial
+    & > .timers
+        & > div
+            width 50%
+            float left
+            position relative
+
+.infos
+    .remaining-time
+        text-transform uppercase
+    .past-time
+        display none
+
+.modal-enter
+    opacity 0
+
+.dot
+    color darkblue
+    font bold
+
+.modal-leave-active
+    opacity 0
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container
+    -webkit-transform scale(1.1)
+    transform scale(1.1)
+
+div#app-buttons
+    width 70%
+    float left
+    position relative
+
+#newrace
+    margin-left 651px
+    top 19px
+
+.start-run-button
+    span
+        float right
+        width 19%
+        position relative
+        top -44px
+
+.live-run
+   height auto !important
+
+
+#Question
+    width 100% !important
+    border 1px solid #ccc
+    padding 3px 0px 18% 3px
+    height auto !important
+
+.sweet-content-content
+    button
+        float right
+
+.sweet-modal
+    overflow hidden
+    padding 0px 0 18px 0
+    &.is-alert
+        .sweet-content
+            padding-top 20px !important
+            padding-bottom 20px !important
+
+.image
+    float left
+    margin-bottom 5px
+    img
+        width 32px
+    h1
+        float right
+        margin 0 0 0 8px
+.sweet-modal-overlay
+    &.theme-light
+        &.sweet-modal-clickable
+            &.is-visible
+                background hsla(0, 4%, 71%, 0.38) !important
+
+.sweet-modal
+    .sweet-box-actions
+        .sweet-action-close
+            &:hover
+                background-color #423799 !important
+
+button#sds
+    width 68px
+
+.dg-backdrop
+    background hsla(0, 3%, 3%, 0.38)!important
+
+.dg-content-footer
+    text-align center !important
+
+.dg-pull-right
+    float none !important
+
+.dg-btn
+    &.dg-btn--cancel
+        background-color #423799 !important
+        float right !important
+        left -92px !important
+    &.dg-btn--ok
+        &.dg-pull-right
+            color #423799 !important
+            border-color #423799 !important
+
+.dg-content-body
+    border-bottom 2px solid #e1e6ea !important
+    padding-bottom 15px !important
+    text-align center !important
+
+.box
+    margin-top 21px !important
+    display none !important
+
+.infos
+    margin-top 20px !important
+
+// .v-table-views
+//     &.v-table-class
+//         border-color black !important
+
+

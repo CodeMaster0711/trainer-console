@@ -1,0 +1,98 @@
+@import '../base/variables'
+
+.form
+  &__group
+    margin 0 0 15px
+    position relative
+
+    &.has-danger
+      .form-control
+        border 1px solid $danger
+
+    label
+      display block
+      width 100%
+      font-size 14px
+      color #333
+      font-weight bold
+      margin 0 0 5px
+
+      span.required
+        color $danger
+
+    .form-control
+      display block
+      width 100%
+      padding 6px 12px
+      color #333
+      font-size 14px
+      border-radius 2px
+      border 1px solid #ddd
+      transition border ease-in-out .15s
+      background-color #fff
+      -webkit-appearance none
+      resize none
+
+      &--no-border
+        border none
+
+      &:not(textarea)
+        height 34px
+
+      &:hover, &:focus
+        outline none
+        border 1px solid $primary
+
+      &:disabled
+        background-color #f5f5f5
+
+      &.is-danger
+        border 1px solid $danger
+
+      &__select
+        position relative
+
+        &:before
+          content ""
+          position absolute
+          transform translateY(50%)
+          bottom 50%
+          right 10px
+          width 0
+          height 0
+          display inline-block
+          vertical-align middle
+          border-style solid
+          border-width 5px 5px 0 5px
+          border-color #d5d5d5 transparent transparent transparent
+
+    select
+      &.transparent
+        background transparent
+        border 0
+        color #fff
+        border-radius 0
+        border-bottom 2px solid #fff
+
+    .help
+      display block
+      font-size 11px
+      margin-top 5px
+
+      &.is-danger
+        color $danger
+
+    &:last-of-type
+      margin 0
+
+    &--inline
+
+      label
+        display initial
+
+    &--half
+        lost-column 6/12 0 15px flex
+
+  &-container
+    button
+      margin 15px 0 0
